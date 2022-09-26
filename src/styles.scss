@@ -17,10 +17,7 @@ $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 
-@mixin zero-margin($pad-up-down, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-down $pad-left-right;
-}
+
 
 body{
   padding: 0;
@@ -45,4 +42,9 @@ body{
 
 .flex-spacer {
 flex: 1 1 auto;
+}
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-down $pad-left-right;
 }
