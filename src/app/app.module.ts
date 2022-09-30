@@ -1,6 +1,17 @@
 import { NgModule } from '@angular/core';
+import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatDialogModule} from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatListModule } from "@angular/material/list";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -17,15 +28,10 @@ import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 
 
-import 'hammerjs';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatToolbarModule } from "@angular/material/toolbar";
-import { FlexLayoutModule } from "@angular/flex-layout";
-import { MatListModule } from "@angular/material/list";
-import { MatGridListModule } from "@angular/material/grid-list";
-import { MatCardModule } from "@angular/material/card";
+
 import { LeaderService } from './services/leader.service';
 import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +54,11 @@ import { LoginComponent } from './login/login.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [
     DishService,
