@@ -23,6 +23,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatListModule } from "@angular/material/list";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
+import { LeaderService } from './services/leader.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { MatCardModule } from "@angular/material/card";
   ],
   providers: [
     DishService,
-    PromotionService
+    PromotionService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })
